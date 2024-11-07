@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducaXpress</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+        }
+        header {
+            background-color: #0288d1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header img {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+        }
+        nav {
+            background-color: #0277bd;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #01579b;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #0288d1;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        /* Estilo para abas */
+        .tab {
+            display: none;
+        }
+        #paginaInicial { display: block; }
+        .tabcontent {
+            display: none;
+        }
+        .tabcontent.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnB0M2YxMHE3MjJnNzV6MmJ2OGoyeHoxZ2g4d2t0aWdtZW44bjY4ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jL5LdoZioLSSMTID92/giphy.gif" alt="Logo EducaXpress">
+        <h1>EducaXpress - Aprenda Matemática Rápido</h1>
+    </header>
+
+    <nav>
+        <a href="javascript:showTab('paginaInicial')">Página Inicial</a>
+        <a href="javascript:showTab('materia')">Matéria</a>
+        <a href="javascript:showTab('provas')">Provas</a>
+        <a href="javascript:showTab('gabaritos')">Gabarito</a>
+        <a href="javascript:showTab('sobre')">Sobre</a>
+        <a href="javascript:showTab('contato')">Contato</a>
+    </nav>
+
+    <section id="paginaInicial" class="tabcontent active">
+        <h2>Bem-vindo ao EducaXpress</h2>
+        <p>EducaXpress é sua plataforma de aprendizado em matemática. Explore conteúdos do básico ao avançado e se prepare para as provas!</p>
+    </section>
+
+    <section id="materia" class="tabcontent">
+        <h2>Matéria</h2>
+
+        <h3>Nível Iniciante</h3>
+        <h4>Operações Matemáticas Básicas</h4>
+        <p>
+            Neste nível, você aprenderá sobre as quatro operações básicas: adição, subtração, multiplicação e divisão.
+        </p>
+        <p><strong>Adição:</strong> A operação de juntar valores. Exemplo: 2 + 3 = 5.</p>
+        <p><strong>Subtração:</strong> A operação de remover valores. Exemplo: 5 - 2 = 3.</p>
+        <p><strong>Multiplicação:</strong> A operação de somar repetidamente. Exemplo: 3 × 4 = 12.</p>
+        <p><strong>Divisão:</strong> A operação de dividir em partes iguais. Exemplo: 12 ÷ 4 = 3.</p>
+
+        <h4>Frações</h4>
+        <p>Introdução às frações. Por exemplo, 1/2 significa "uma parte de duas".</p>
+        <p><strong>Exemplo:</strong> 1/4 + 1/4 = 2/4 ou 1/2.</p>
+
+        <h4>Decimais</h4>
+        <p>Aprendendo a trabalhar com números decimais, como 0,5 ou 1,75.</p>
+        <p><strong>Exemplo:</strong> 0,5 + 0,75 = 1,25.</p>
+
+        <h3>Nível Intermediário</h3>
+        <h4>Potências e Raízes</h4>
+        <p>Introdução a potências e raízes quadradas.</p>
+        <p><strong>Exemplo:</strong> 2^3 = 8 (dois elevado à terceira potência).</p>
+        <p><strong>Raiz Quadrada:</strong> √9 = 3.</p>
+
+        <h4>Equações Simples</h4>
+        <p>Resolução de equações simples do tipo "x + 3 = 5".</p>
+        <p><strong>Exemplo:</strong> Para resolver x + 3 = 5, subtraímos 3 de ambos os lados: x = 2.</p>
+
+        <h4>Geometria Básica</h4>
+        <p>Estudo de formas geométricas simples como quadrados, retângulos e círculos.</p>
+        <p><strong>Exemplo:</strong> A área de um quadrado com lado 4 é 16 (área = lado²).</p>
+
+        <h3>Nível Avançado</h3>
+        <h4>Sistemas de Equações</h4>
+        <p>Resolução de sistemas de equações com duas variáveis.</p>
+        <p><strong>Exemplo:</strong> Resolver o sistema:
+        <br> 2x + y = 5
+        <br> 3x - y = 4.</p>
+        <p>Somamos as equações e resolvemos: x = 2, y = 1.</p>
+
+        <h4>Funções</h4>
+        <p>Introdução ao conceito de funções. Exemplo: f(x) = 2x + 1.</p>
+        <p><strong>Exemplo:</strong> Se f(x) = 2x + 1, então f(2) = 2(2) + 1 = 5.</p>
+
+        <h4>Trigonometria</h4>
+        <p>Introdução ao seno, cosseno e tangente. Trabalhando com ângulos e triângulos retângulos.</p>
+        <p><strong>Exemplo:</strong> Se o ângulo é 30°, então sen(30°) = 0,5.</p>
+
+        <h3>Nível Mestre</h3>
+        <h4>Derivadas e Integrais</h4>
+        <p>Introdução ao cálculo diferencial e integral. Derivadas medem a taxa de variação, e integrais somam infinitas partes pequenas.</p>
+        <p><strong>Exemplo de Derivada:</strong> Se f(x) = x², então a derivada f'(x) = 2x.</p>
+        <p><strong>Exemplo de Integral:</strong> A integral de f(x) = 2x é F(x) = x².</p>
+
+        <h4>Limites</h4>
+        <p>O conceito de limite permite entender o comportamento de funções em valores extremos.</p>
+        <p><strong>Exemplo:</strong> O limite de (1/x) quando x se aproxima de 0 é infinito.</p>
+
+        <h4>Álgebra Linear</h4>
+        <p>Estudo de vetores, matrizes e sistemas lineares complexos.</p>
+        <p><strong>Exemplo:</strong> Multiplicação de matrizes: Se A = [[1, 2], [3, 4]] e B = [[5, 6], [7, 8]], o produto AB = [[19, 22], [43, 50]].</p>
+
+    </section>
+
+    <section id="provas" class="tabcontent">
+        <h2>Provas</h2>
+        <p>Selecione o nível de prova:</p>
+        <ul>
+            <li><a href="javascript:showProva('iniciante')">Iniciante</a></li>
+            <li><a href="javascript:showProva('intermediario')">Intermediário</a></li>
+            <li><a href="javascript:showProva('avancado')">Avançado</a></li>
+            <li><a href="javascript:showProva('mestre')">Mestre</a></li>
+        </ul>
+        <div id="provaIniciante" class="tab prova-content">
+            <h3>Prova Iniciante</h3>
+            <p>Conteúdo e exercícios para o nível iniciante.</p>
+        </div>
+        <div id="provaIntermediario" class="tab prova-content">
+            <h3>Prova Intermediário</h3>
+            <p>Conteúdo e exercícios para o nível intermediário.</p>
+        </div>
+        <div id="provaAvancado" class="tab prova-content">
+            <h3>Prova Avançado</h3>
+            <p>Conteúdo e exercícios para o nível avançado.</p>
+        </div>
+        <div id="provaMestre" class="tab prova-content">
+            <h3>Prova Mestre</h3>
+            <p>Conteúdo e exercícios para o nível mestre.</p>
+        </div>
+    </section>
+
+    <section id="gabaritos" class="tabcontent">
+        <h2>Gabarito</h2>
+        <p>Selecione o nível de gabarito:</p>
+        <ul>
+            <li><a href="javascript:showGabarito('iniciante')">Iniciante</a></li>
+            <li><a href="javascript:showGabarito('intermediario')">Intermediário</a></li>
+            <li><a href="javascript:showGabarito('avancado')">Avançado</a></li>
+            <li><a href="javascript:showGabarito('mestre')">Mestre</a></li>
+        </ul>
+        <div id="gabaritoIniciante" class="tab gabarito-content">
+            <h3>Gabarito Iniciante</h3>
+            <p>Respostas e explicações para o nível iniciante.</p>
+        </div>
+        <div id="gabaritoIntermediario" class="tab gabarito-content">
+            <h3>Gabarito Intermediário</h3>
+            <p>Respostas e explicações para o nível intermediário.</p>
+        </div>
+        <div id="gabaritoAvancado" class="tab gabarito-content">
+            <h3>Gabarito Avançado</h3>
+            <p>Respostas e explicações para o nível avançado.</p>
+        </div>
+        <div id="gabaritoMestre" class="tab gabarito-content">
+            <h3>Gabarito Mestre</h3>
+            <p>Respostas e explicações para o nível mestre.</p>
+        </div>
+    </section>
+
+    <section id="sobre" class="tabcontent">
+        <h2>Sobre</h2>
+        <p>O EducaXpress é uma plataforma educacional dedicada ao ensino e avaliação em matemática, proporcionando conteúdos desde o nível básico até o avançado.</p>
+    </section>
+
+    <section id="contato" class="tabcontent">
+        <h2>Contato</h2>
+        <p>Para entrar em contato, envie um email para <a href="mailto:contato@educaxpress.com">contato@educaxpress.com</a>.</p>
+    </section>
+
+    <footer>
+        <p>EducaXpress © 2024 - Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        // Função para trocar de aba
+        function showTab(tabId) {
+            var tabs = document.getElementsByClassName('tabcontent');
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('active');
+            }
+            document.getElementById(tabId).classList.add('active');
+        }
+
+        // Função para exibir provas específicas
+        function showProva(provaId) {
+            var provas = document.getElementsByClassName('prova-content');
+            for (var i = 0; i < provas.length; i++) {
+                provas[i].style.display = 'none';
+            }
+            document.getElementById('prova' + provaId.charAt(0).toUpperCase() + provaId.slice(1)).style.display = 'block';
+        }
+
+        // Função para exibir gabaritos específicos
+        function showGabarito(gabaritoId) {
+            var gabaritos = document.getElementsByClassName('gabarito-content');
+            for (var i = 0; i < gabaritos.length; i++) {
+                gabaritos[i].style.display = 'none';
+            }
+            document.getElementById('gabarito' + gabaritoId.charAt(0).toUpperCase() + gabaritoId.slice(1)).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>

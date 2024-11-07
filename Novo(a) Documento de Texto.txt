@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducaXpress - Matemática para Todos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1d3557;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        /* Estilo e animação do logo */
+        .logo {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .tab {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            background-color: #a8dadc;
+        }
+        .tab button {
+            background-color: #457b9d;
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .tab button:hover {
+            background-color: #1d3557;
+        }
+        .tab button.active {
+            background-color: #1d3557;
+        }
+        .tabcontent {
+            display: none;
+            padding: 20px;
+        }
+        h2 {
+            color: #1d3557;
+        }
+        .nivel {
+            background-color: #a8dadc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #1d3557;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Logo Animado -->
+    <img src="https://github.com/eduaro3012/ed/raw/main/V%C3%ADdeo-do-WhatsApp-de-2024-09-20-%C3%A0_s_-21.47.32_483ec631.gif" alt="Logo EducaXpress" class="logo">
+    <h1>EducaXpress - Avaliação de Matemática</h1>
+    <nav>
+        <a href="#iniciante">Iniciante</a>
+        <a href="#intermediario">Intermediário</a>
+        <a href="#avancado">Avançado</a>
+        <a href="#mestre">Mestre</a>
+    </nav>
+</header>
+
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Conteudos')" id="defaultOpen">Conteúdos</button>
+    <button class="tablinks" onclick="openTab(event, 'Provas')">Provas</button>
+</div>
+
+<!-- Conteúdos -->
+<div id="Conteudos" class="tabcontent">
+    <section id="iniciante">
+        <h2>Nível Iniciante</h2>
+        <div class="nivel">
+            <p>Conteúdos básicos de matemática para quem está começando:</p>
+            <ul>
+                <li>Operações básicas: adição, subtração, multiplicação e divisão</li>
+                <li>Números inteiros e frações</li>
+                <li>Propriedades dos números</li>
+                <li>Problemas simples de raciocínio lógico</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="intermediario">
+        <h2>Nível Intermediário</h2>
+        <div class="nivel">
+            <p>Conteúdos para quem já tem um conhecimento básico de matemática:</p>
+            <ul>
+                <li>Equações de 1º e 2º grau</li>
+                <li>Geometria básica: áreas, perímetros e volumes</li>
+                <li>Proporções e porcentagens</li>
+                <li>Introdução à álgebra</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="avancado">
+        <h2>Nível Avançado</h2>
+        <div class="nivel">
+            <p>Conteúdos avançados para quem deseja aprofundar os conhecimentos:</p>
+            <ul>
+                <li>Funções: afim, quadrática e exponencial</li>
+                <li>Trigonometria: seno, cosseno e tangente</li>
+                <li>Probabilidade e estatística básica</li>
+                <li>Sistemas de equações lineares</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="mestre">
+        <h2>Nível Mestre</h2>
+        <div class="nivel">
+            <p>Para quem quer dominar completamente a matemática:</p>
+            <ul>
+                <li>Cálculo diferencial e integral</li>
+                <li>Álgebra linear e matrizes</li>
+                <li>Análise combinatória avançada</li>
+                <li>Teoria dos números</li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+<!-- Provas -->
+<div id="Provas" class="tabcontent">
+    <h2>Provas para Avaliação</h2>
+    <div class="nivel">
+        <p>Teste seus conhecimentos com essas provas de diferentes níveis:</p>
+        <ul>
+            <li><a href="#prova-iniciante">Prova Nível Iniciante</a></li>
+            <li><a href="#prova-intermediario">Prova Nível Intermediário</a></li>
+            <li><a href="#prova-avancado">Prova Nível Avançado</a></li>
+            <li><a href="#prova-mestre">Prova Nível Mestre</a></li>
+        </ul>
+    </div>
+
+    <section id="prova-iniciante">
+        <h3>Prova Nível Iniciante</h3>
+        <p>Questões básicas sobre operações aritméticas e lógica.</p>
+    </section>
+
+    <section id="prova-intermediario">
+        <h3>Prova Nível Intermediário</h3>
+        <p>Teste seus conhecimentos sobre equações e geometria básica.</p>
+    </section>
+
+    <section id="prova-avancado">
+        <h3>Prova Nível Avançado</h3>
+        <p>Prova focada em funções, trigonometria e estatística.</p>
+    </section>
+
+    <section id="prova-mestre">
+        <h3>Prova Nível Mestre</h3>
+        <p>Prova desafiadora sobre cálculo, álgebra linear e teoria dos números.</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 EducaXpress - Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Abre a aba "Conteúdos" por padrão
+    document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
